@@ -1,0 +1,26 @@
+✅ What is a Module?
+A module is a file that contains reusable code (functions, objects, classes, etc.) that you can import into other files.
+
+In Node.js, there are 3 types of modules you can import:
+🔹 1. Built-in Modules
+(Node.js provides these)
+fs -> File system (read/write files)
+path -> Work with file paths
+http -> Create servers
+os -> System information
+
+🔹 2. User-Defined Modules
+(Your own files)
+
+🔹 3. Third-Party Modules
+(Installed via npm like axios, chalk, etc.)
+
+In the ES Modules you may also see: import {<thing1>, <thing2>, ...} from 'package-path/module-path'; -> Advantage: Selective !!! No need of requiring all things !!!!!
+But that works only if "type": "module" is added in package.json. Also we need to export things in the package/module using 'export' keyword in case of User-Defined Modules/Packages.
+
+We only use entirely, either require() or import !!!!!
+
+Loading is synchronous for 'require' but can be asynchronous for 'import'.
+
+require() example -> Figlet
+import example -> Random Words

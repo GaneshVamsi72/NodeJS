@@ -1,0 +1,15 @@
+✅ What is package.json?
+It's a special file that stores information about your Node.js project — like:
+1. Project name, version, author
+2. Installed packages (dependencies)
+3. Scripts to run your app (like start, test)
+4. Project settings
+
+Created automatically by: npm init -y
+The -y flag in npm init -y stands for "yes".
+
+It automatically accepts all default options for creating a package.json file, so you don’t have to answer each question manually like:
+package name, version, description, entry point, test command, git repository, keywords, author, license
+
+Without -y: npm init
+⬆️ This will ask you questions step-by-step to fill the package.json.

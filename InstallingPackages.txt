@@ -1,0 +1,15 @@
+📁 What Happens When You Use "npm install <package-name>":
+
+1. Creates a folder: node_modules/ – stores installed packages.
+2. Creates/uses package.json – stores project info + list of packages.
+3. May create package-lock.json – locks the version for reliability.
+
+✅ What is package.json?
+It's a special file that stores information about your Node.js project — like:
+1. Project name, version, author
+2. Installed packages (dependencies)
+3. Scripts to run your app (like start, test)
+4. Project settings
+
+✅ Local Installation 
+The package is installed only in your project folder (inside node_modules/).
