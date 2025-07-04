@@ -1,0 +1,194 @@
+Chat GPT Reference -> https://chatgpt.com/share/686832ca-dda0-8010-9655-c54cb6124c13
+
+Node.js -> JS Runtime Environment
+It is used for server side programming 
+
+*Node.js is not a language, library or framework.
+
+Node.js is a runtime environment that lets you run JavaScript outside of a web browser — especially on the server side.
+
+🧠 Think of it like:
+Browsers run JavaScript for users,
+Node.js runs JavaScript for servers.
+
+🔄 "JS and Node" as a Real-World Analogy
+🧠 JavaScript is like:
+A brain that knows how to do things (logic, math, decisions).
+But this brain is trapped inside a browser — it can only play with webpage stuff like buttons, images, inputs.
+
+🚪Node.js is like:
+Giving that same brain a body, arms, and tools — now it can:
+
+Touch files
+
+Talk to the internet
+
+Use your computer
+
+Handle a database
+
+All outside the browser.
+
+So Node = JavaScript + Superpowers (through C++ & V8).
+
+✅ What is Node REPL?
+REPL stands for:
+
+Read – Read user input.
+
+Evaluate – Run the input.
+
+Print – Show the result.
+
+Loop – Repeat.
+
+⭐⭐⭐ It's like a playground for JavaScript in your **terminal**.
+
+🛠 How to Start REPL:
+1. Open Terminal or Command Prompt.
+
+2. Type: node
+
+3. You’ll see: >
+This is the REPL prompt. Now you can type JavaScript and see instant results!
+
+🔚 How to Exit REPL:
+1. Press: Ctrl + C twice
+
+2. Or type: .exit and press Enter
+
+✅ What is process?
+process is a built-in global object in Node.js that gives info about:
+
+-> The program currently running
+-> The system
+-> Input/output
+-> Environment variables
+
+You can use it anywhere in your code — no need to import!
+
+🔍 Common Uses of process:
+
+1. Get arguments from command line
+
+Use: process.argv
+// greet.js
+console.log("Hello", process.argv[2]);
+
+Run:
+node greet.js Ram
+
+Output:
+Hello Ram
+
+2. Exit the process
+
+process.exit();
+✅ Useful to stop the program manually.
+
+3. Get current working directory
+
+console.log(process.cwd());
+
+4. Get environment variables
+
+console.log(process.env);
+console.log(process.env.USER);  // Example
+
+You can also set and use custom variables like:
+
+USER=Ram node app.js
+
+5. Get Node version
+
+console.log(process.version);
+
+🧾 What is module in Node.js?
+In Node.js, every file is treated as a separate module.
+
+Node wraps your file in a function like this behind the scenes:
+
+(function (exports, require, module, __filename, __dirname) {
+  // your code
+});
+
+So module is a built-in object available in every Node.js file.
+
+It contains information about the current module (the file).
+
+✅ What is Export?
+In Node.js, export lets you share code (like variables, functions, objects) from one file to another.
+
+We use module.exports to export in Node.js.
+
+module.exports is the object that gets returned when you require() a module in another module(or file).
+
+✅ If we want to collect data from multiple files in a folder and use it elsewhere:
+1. Export data from each file using module.exports = ...
+2. Create an index.js file inside the folder.
+3. In index.js, import each file using require('./fileName').
+4. Combine the imported data into an object or array.
+5. Export that combined object/array from index.js using module.exports.
+6. Now in any other file, you can just:
+	const data = require('./folderName');
+
+
+npm stands for Node Package Manager.
+It is the default (command line) tool that comes with Node.js to install, manage, and share JavaScript libraries (also called packages or modules).
+
+🧠 Think of it like:
+Play Store for JavaScript packages 📲
+Just like you install apps on your phone, you install packages with npm.
+
+npmjs.com -> Website for info of packages !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
